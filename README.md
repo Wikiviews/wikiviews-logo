@@ -9,7 +9,7 @@ To render PNG images from the SVG source, you can use `make`. The build process 
 `python3` executable in your path.
 
 The images are rendered in packages. Each package contains the exported PNGs, which belong to the same size in 'dp'
-(density-independent pixels <!-- TODO: Reference -->) on a predefined range of screens with common pixel densities.
+(density-independent pixels) on a predefined range of screens with common pixel densities.
 So when you build a specific size, this size is interpreted as 'dp' and the corresponding PNGs for screens around 72dpi,
 96dpi, 130dpi, 160dpi, 210dpi, 240dpi, 320dpi, 400dpi, 480dpi and 640dpi are redered. You can read more about 'dp' and
 developing for different screen sizes and densities at the [Google Material Design Spec](https://material.google.com/layout/units-measurements.html).
