@@ -4,7 +4,7 @@ all: pngs
 
 pngs: svg
 	mkdir -p ./exports/png
-	./render-pngs.py | /bin/sh
+	./render-pngs.py ${SIZE} | /bin/sh
 
 pngs48dp: svg
 	mkdir -p ./exports/png
@@ -25,10 +25,6 @@ pngs1000dp: svg
 pngs2000dp: svg
 	mkdir -p ./exports/png
 	./render-pngs.py "2000" | /bin/sh
-
-pngsInSize: svg
-	mkdir -p ./exports/png
-	./render-pngs.py ${SIZE} | /bin/sh
 
 svg:
 	mkdir -p ./exports/svg
